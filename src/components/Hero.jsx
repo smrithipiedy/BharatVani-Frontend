@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Globe, Wifi, Battery, Mic, MicOff, MoreHorizontal } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
@@ -53,7 +53,57 @@ const PhoneScreen = ({ type }) => {
 };
 
 const Hero = () => {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
+
+    const taglines = {
+        en: [
+            { t1: "India's Toll-Free", t2: "AI Assistant" },
+            { t1: "The Internet,", t2: "Spoken." },
+            { t1: "Voice Powered", t2: "Digital Access" },
+            { t1: "Zero Barriers.", t2: "Just Voice." },
+        ],
+        hi: [
+            { t1: "भारत की टोल-फ्री", t2: "AI सहायक" },
+            { t1: "इंटरनेट,", t2: "आवाज़ में।" },
+            { t1: "वॉयस पावर्ड", t2: "डिजिटल पहुंच" },
+            { t1: "शून्य बाधाएं।", t2: "सिर्फ आवाज़।" },
+        ],
+        ta: [
+            { t1: "இந்தியாவின் இலவச", t2: "AI உதவியாளர்" },
+            { t1: "இணையம்,", t2: "பேசுகிறது." },
+            { t1: "குரல் வழி", t2: "டிஜிட்டல் அணுகல்" },
+            { t1: "தடைகள் இல்லை.", t2: "குரல் மட்டுமே." },
+        ],
+        mr: [
+            { t1: "भारताची टोल-फ्री", t2: "AI सहाय्यक" },
+            { t1: "इंटरनेट,", t2: "आवाजामध्ये." },
+            { t1: "व्हॉइस पॉवर्ड", t2: "डिजिटल प्रवेश" },
+            { t1: "शून्य अडथळे.", t2: "फक्त आवाज." },
+        ],
+        te: [
+            { t1: "భారతదేశపు టోల్-ఫ్రీ", t2: "AI అసిస్టెంట్" },
+            { t1: "ఇంటర్నెట్,", t2: "మాట్లాడుతుంది." },
+            { t1: "వాయిస్ పవర్డ్", t2: "డిజిటల్ యాక్సెస్" },
+            { t1: "అడ్డంకులు లేవు.", t2: "కేవలం వాయిస్." },
+        ],
+        bn: [
+            { t1: "ভারতের টোল-ফ্রি", t2: "AI অ্যাসিস্ট্যান্ট" },
+            { t1: "ইন্টারনেট,", t2: "কথায়।" },
+            { t1: "ভয়েস পাওয়ার্ড", t2: "ডিজিটাল অ্যাক্সেস" },
+            { t1: "শূন্য বাধা।", t2: "শুধুমাত্র ভয়েস।" },
+        ]
+    };
+
+    const currentLanguage = language || 'en';
+    const currentTaglines = taglines[currentLanguage] || taglines['en'];
+    const [taglineIndex, setTaglineIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTaglineIndex((prev) => (prev + 1) % currentTaglines.length);
+        }, 4000);
+        return () => clearInterval(interval);
+    }, [currentTaglines.length]);
 
     return (
         <section className="relative min-h-[95vh] flex flex-col items-center pt-32 pb-20 overflow-hidden bg-tricolor-gradient">
@@ -70,15 +120,23 @@ const Hero = () => {
                     {t('hero.badge')}
                 </motion.div>
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="text-6xl md:text-[7.5rem] leading-[1.0] mb-8 tracking-tighter text-black"
-                >
-                    <span className="hero-heading block">{t('hero.title1')}</span>
-                    <span className="hero-heading-italic block text-[#FF9933]">{t('hero.title2')}</span>
-                </motion.h1>
+
+
+                <div className="h-[180px] sm:h-[220px] md:h-[280px] flex items-center justify-center relative w-full mb-8 perspective-1000">
+                    <AnimatePresence mode="wait">
+                        <motion.h1
+                            key={`${language}-${taglineIndex}`}
+                            initial={{ opacity: 0, rotateX: -20, y: 20 }}
+                            animate={{ opacity: 1, rotateX: 0, y: 0 }}
+                            exit={{ opacity: 0, rotateX: 20, y: -20 }}
+                            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                            className="text-[min(10vw,2.8rem)] sm:text-5xl md:text-[7.5rem] leading-[1.1] md:leading-[1.0] tracking-tighter w-full absolute inset-0 flex flex-col items-center justify-center text-center origin-center px-4"
+                        >
+                            <span className="hero-heading block text-black whitespace-nowrap">{currentTaglines[taglineIndex].t1}</span>
+                            <span className="hero-heading-italic block text-[#FF9933] whitespace-nowrap">{currentTaglines[taglineIndex].t2}</span>
+                        </motion.h1>
+                    </AnimatePresence>
+                </div>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}

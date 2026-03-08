@@ -55,7 +55,7 @@ const Architecture = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-5xl md:text-6xl font-black tracking-tight"
+                        className="text-4xl md:text-6xl font-black tracking-tight"
                     >
                         {t('architecture.title')} <br />
                         <span className="text-gradient-saffron">{t('architecture.accent')}</span>
@@ -109,7 +109,7 @@ const Architecture = () => {
 
                     {/* Right: Detailed View & Visual */}
                     <div className="lg:col-span-8">
-                        <div className="glass rounded-[2rem] md:rounded-[3rem] p-6 md:p-12 border border-white/5 relative overflow-hidden h-full min-h-[500px] flex flex-col">
+                        <div className="glass rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 border border-white/5 relative overflow-hidden h-full min-h-[450px] md:min-h-[500px] flex flex-col">
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#FF9933]/30 to-transparent"></div>
 
                             <AnimatePresence mode="wait">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Landmark, Wheat, ShoppingCart, Languages, ArrowRight } from 'lucide-react';
+import { Landmark, Wheat, ShoppingCart, Languages, ArrowRight, Grid } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const Capabilities = () => {
@@ -41,8 +41,10 @@ const Capabilities = () => {
             {/* Decorative Grid */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
+
+
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-8">
                     <div className="max-w-2xl">
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
@@ -52,8 +54,8 @@ const Capabilities = () => {
                         >
                             {t('capabilities.tag')}
                         </motion.div>
-                        <h2 className="text-5xl md:text-6xl font-black tracking-tighter mb-6">{t('capabilities.title')} <br /><span className="text-white/60">{t('capabilities.accent')}</span></h2>
-                        <p className="text-white/70 text-xl font-light leading-relaxed">{t('capabilities.desc')}</p>
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter mb-4 md:mb-6">{t('capabilities.title')} <br /><span className="text-white/60">{t('capabilities.accent')}</span></h2>
+                        <p className="text-white/70 text-lg md:text-xl font-light leading-relaxed">{t('capabilities.desc')}</p>
                     </div>
                 </div>
 
@@ -66,9 +68,9 @@ const Capabilities = () => {
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
                             whileHover={{ y: -15 }}
-                            className={`group p-10 rounded-[40px] glass border border-white/5 flex flex-col items-start gap-8 transition-all duration-500 shadow-2xl ${card.color}`}
+                            className={`group p-8 md:p-10 rounded-[30px] md:rounded-[40px] glass border border-white/5 flex flex-col items-start gap-6 md:gap-8 transition-all duration-500 shadow-2xl ${card.color}`}
                         >
-                            <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/5 group-hover:bg-white/[0.08] transition-colors">
+                            <div className="p-4 md:p-5 rounded-2xl bg-white/[0.03] border border-white/5 group-hover:bg-white/[0.08] transition-colors">
                                 {card.icon}
                             </div>
                             <div className="space-y-4">

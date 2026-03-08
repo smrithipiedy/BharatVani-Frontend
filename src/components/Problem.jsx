@@ -14,7 +14,7 @@ const Problem = () => {
     ];
 
     return (
-        <section id="problem" className="py-32 relative overflow-hidden bg-[#0C0C0E]">
+        <section id="problem" className="py-20 md:py-32 relative overflow-hidden bg-[#0C0C0E]">
             {/* Background Texture */}
             <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/carbon-fibre.png")' }}></div>
 
@@ -33,7 +33,7 @@ const Problem = () => {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter"
+                            className="text-4xl sm:text-5xl md:text-7xl font-black mb-6 md:mb-8 leading-[1.1] tracking-tighter"
                         >
                             {t('problem.title')} <br />
                             <span className="text-white/50">{t('problem.accent')}</span>
@@ -43,7 +43,7 @@ const Problem = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-xl text-white/70 leading-relaxed mb-12 max-w-xl"
+                            className="text-lg md:text-xl text-white/70 leading-relaxed mb-8 md:mb-12 max-w-xl"
                         >
                             {t('problem.desc')}
                         </motion.p>

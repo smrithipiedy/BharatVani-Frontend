@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Cpu, Database, MessageSquare, ArrowRight, Zap, Shield, Globe } from 'lucide-react';
+import { Phone, Cpu, Database, MessageSquare, ArrowRight, Zap, Shield, Globe, Box } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const SolutionFlow = () => {
@@ -38,7 +38,7 @@ const SolutionFlow = () => {
     ];
 
     return (
-        <section className="py-32 relative bg-tricolor-gradient overflow-hidden">
+        <section id="operational-pipeline" className="py-20 md:py-32 relative bg-tricolor-gradient overflow-hidden">
             {/* Decorative Ambient Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#FF9933]/5 blur-[120px] rounded-full animate-drift" />
@@ -47,7 +47,7 @@ const SolutionFlow = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 {/* Header Section */}
-                <div className="flex flex-col mb-24">
+                <div className="flex flex-col mb-12 md:mb-24">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const SolutionFlow = () => {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
-                                className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter text-black leading-[0.9]"
+                                className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter text-black leading-[0.9]"
                             >
                                 {t('pipeline.heading')} <br />
                                 <span className="text-black/30 italic">{t('pipeline.headingAccent')}</span>
@@ -77,7 +77,7 @@ const SolutionFlow = () => {
                             initial={{ opacity: 0, x: 20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="max-w-md text-black/70 leading-relaxed font-medium text-lg lg:text-right"
+                            className="max-w-md text-black/70 leading-relaxed font-medium text-base md:text-lg lg:text-right"
                         >
                             {t('pipeline.description')}
                         </motion.p>
@@ -85,7 +85,7 @@ const SolutionFlow = () => {
                 </div>
 
                 {/* The Pipeline Visualization */}
-                <div className="relative pt-20 pb-12">
+                <div className="relative pt-10 md:pt-20 pb-12">
                     {/* Background Flow Path (Desktop Only) */}
                     <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 hidden lg:block overflow-visible pr-12">
                         <svg width="100%" height="200" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="overflow-visible">
@@ -128,7 +128,7 @@ const SolutionFlow = () => {
                                 className="group relative"
                             >
                                 {/* Card Body */}
-                                <div className="bg-white/40 backdrop-blur-xl border border-white/60 rounded-[3rem] p-10 h-full shadow-[0_8px_48px_rgba(0,0,0,0.03)] hover:shadow-[0_32px_64px_rgba(0,0,0,0.08)] transition-all duration-700 group-hover:-translate-y-3 relative overflow-hidden flex flex-col">
+                                <div className="bg-white/40 backdrop-blur-xl border border-white/60 rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-10 h-full shadow-[0_8px_48px_rgba(0,0,0,0.03)] hover:shadow-[0_32px_64px_rgba(0,0,0,0.08)] transition-all duration-700 md:group-hover:-translate-y-3 relative overflow-hidden flex flex-col">
                                     {/* Inner Color Glow */}
                                     <div
                                         className="absolute -top-32 -right-32 w-64 h-64 rounded-full blur-[80px] opacity-0 group-hover:opacity-30 transition-opacity duration-1000 pointer-events-none"
@@ -137,7 +137,7 @@ const SolutionFlow = () => {
 
                                     <div className="relative z-10 flex flex-col h-full space-y-10">
                                         {/* Icon Container */}
-                                        <div className="flex justify-between items-start">
+                                        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-0">
                                             <div
                                                 className="w-16 h-16 rounded-[1.5rem] flex items-center justify-center text-white shadow-xl relative transition-all duration-500 group-hover:scale-110 group-hover:rotate-6"
                                                 style={{
@@ -150,13 +150,13 @@ const SolutionFlow = () => {
                                                 <div className="absolute inset-0 rounded-[1.5rem] animate-ping bg-current opacity-10 group-hover:opacity-20" />
                                             </div>
 
-                                            <span className="text-5xl font-black text-black/5 select-none leading-none group-hover:text-black/10 transition-colors duration-500">
+                                            <span className="text-4xl md:text-5xl font-black text-black/5 select-none leading-none group-hover:text-black/10 transition-colors duration-500">
                                                 0{idx + 1}
                                             </span>
                                         </div>
 
-                                        <div className="space-y-4 flex-1">
-                                            <div className="flex items-center gap-2">
+                                        <div className="space-y-4 flex-1 text-center md:text-left">
+                                            <div className="flex items-center justify-center md:justify-start gap-2">
                                                 <motion.div
                                                     animate={{ opacity: [0.4, 1, 0.4] }}
                                                     transition={{ duration: 2, repeat: Infinity }}
@@ -199,11 +199,11 @@ const SolutionFlow = () => {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mt-32 relative group"
+                    className="mt-20 md:mt-32 relative group"
                 >
-                    <div className="absolute inset-0 bg-black rounded-[4rem] group-hover:scale-[1.01] transition-transform duration-700 -rotate-1 opacity-[0.03]" />
+                    <div className="absolute inset-0 bg-black rounded-[2.5rem] md:rounded-[4rem] group-hover:scale-[1.01] transition-transform duration-700 -rotate-1 opacity-[0.03]" />
 
-                    <div className="relative p-12 lg:p-20 rounded-[4.5rem] bg-white border border-black/[0.03] shadow-[0_32px_80px_rgba(0,0,0,0.06)] overflow-hidden flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    <div className="relative p-8 md:p-12 lg:p-20 rounded-[2.5rem] md:rounded-[4rem] lg:rounded-[4.5rem] bg-white border border-black/[0.03] shadow-[0_32px_80px_rgba(0,0,0,0.06)] overflow-hidden flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
                         {/* Huge Decorative Background Icon */}
                         <div className="absolute -bottom-24 -right-24 opacity-[0.015] group-hover:opacity-[0.03] transition-all duration-1000 group-hover:scale-110 group-hover:-rotate-12 pointer-events-none">
                             <Cpu size={500} strokeWidth={0.5} />
@@ -219,13 +219,13 @@ const SolutionFlow = () => {
                                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#128807]">{t('pipeline.enterprise')}</span>
                             </div>
 
-                            <h5 className="text-4xl sm:text-5xl font-black mb-8 text-black leading-[1.1] tracking-tighter">
+                            <h5 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 md:mb-8 text-black leading-[1.1] tracking-tighter">
                                 {t('pipeline.infiniteScale')} <br />
                                 <span className="text-gradient-saffron italic">{t('pipeline.neuralSpeed')}</span>
                             </h5>
 
-                            <blockquote className="relative p-8 rounded-[2rem] bg-black/[0.02] border-l-8 border-[#FF9933]">
-                                <p className="text-xl text-black/70 leading-relaxed font-semibold italic">
+                            <blockquote className="relative p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] bg-black/[0.02] border-l-8 border-[#FF9933]">
+                                <p className="text-lg md:text-xl text-black/70 leading-relaxed font-semibold italic">
                                     "{t('pipeline.quote')}"
                                 </p>
                             </blockquote>
@@ -239,15 +239,15 @@ const SolutionFlow = () => {
                                 <motion.div
                                     key={i}
                                     whileHover={{ x: 10 }}
-                                    className="group/stat bg-white border border-black/[0.05] p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 text-center sm:text-left min-w-[280px]"
+                                    className="group/stat bg-white border border-black/[0.05] p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 text-center sm:text-left min-w-full sm:min-w-[280px]"
                                 >
-                                    <div className="text-[10px] uppercase font-black tracking-[0.25em] text-black/30 mb-4 group-hover/stat:text-[#FF9933] transition-colors">
+                                    <div className="text-[10px] uppercase font-black tracking-[0.25em] text-black/30 mb-2 md:mb-4 group-hover/stat:text-[#FF9933] transition-colors">
                                         {stat.label}
                                     </div>
-                                    <div className="text-6xl font-black mb-3 tracking-tighter" style={{ color: stat.color }}>
+                                    <div className="text-5xl md:text-6xl font-black mb-2 md:mb-3 tracking-tighter" style={{ color: stat.color }}>
                                         {stat.val}
                                     </div>
-                                    <div className="text-[11px] font-black text-black/40 flex items-center justify-center sm:justify-start gap-2 uppercase tracking-widest">
+                                    <div className="text-[10px] md:text-[11px] font-black text-black/40 flex items-center justify-center sm:justify-start gap-2 uppercase tracking-widest">
                                         <Zap size={10} className="text-current opacity-40" />
                                         {stat.sub}
                                     </div>

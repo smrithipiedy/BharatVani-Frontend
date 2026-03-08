@@ -160,6 +160,29 @@ export const translations = {
             privacy: "Privacy",
             compliance: "Compliance",
             team: "Team"
+        },
+        team: {
+            tag: "The Visionaries",
+            title: "Meet the",
+            accent: "Team.",
+            desc: "The dedicated individuals behind BharatVani, working to make Digital India truly inclusive for every citizen.",
+            member1Name: "Piyush Lingwal",
+            member1Role: "Team Leader",
+            member1Bio1: "Experienced in full-stack architecture and leading technical innovative projects.",
+            member1Bio2: "Passionate about creating digital solutions that bridge the gap for rural India.",
+            member2Name: "Smrithi P",
+            member2Role: "Frontend Developer",
+            member2Bio1: "Specialized in crafting high-performance, responsive UI and modern aesthetic experiences.",
+            member2Bio2: "Dedicated to making complex technology feel intuitive and accessible for everyone.",
+            member3Name: "Vidhi Garg",
+            member3Role: "Systems Engineer",
+            member3Bio1: "Focused on backend systems and neural processing architecture.",
+            member3Bio2: "Committed to engineering robust and secure infrastructure for national scale.",
+            member4Name: "Sneha Gupta",
+            member4Role: "AI Specialist",
+            member4Bio1: "Expert in multi-language speech models and natural language understanding.",
+            member4Bio2: "Working towards making technology truly inclusive for every dialect and regional nuance.",
+            emailPlaceholder: "email@example.com"
         }
     },
     hi: {
@@ -319,6 +342,29 @@ export const translations = {
             privacy: "गोपनीयता",
             compliance: "अनुपालन",
             team: "टीम"
+        },
+        team: {
+            tag: "दृष्टिकोण रखने वाले",
+            title: "हमारी",
+            accent: "टीम से मिलें।",
+            desc: "भारतवाणी के पीछे समर्पित व्यक्ति, डिजिटल इंडिया को हर नागरिक के लिए सही मायने में समावेशी बनाने के लिए काम कर रहे हैं।",
+            member1Name: "पीयूष लिंगवाल",
+            member1Role: "टीम लीडर",
+            member1Bio1: "फुल-स्टैक आर्किटेक्चर और तकनीकी नवीन परियोजनाओं के नेतृत्व में अनुभवी।",
+            member1Bio2: "ग्रामीण भारत के लिए डिजिटल समाधान बनाने के प्रति उत्साही।",
+            member2Name: "स्मृति पी",
+            member2Role: "फ्रंटएंड डेवलपर",
+            member2Bio1: "उच्च-प्रदर्शन, उत्तरदायी यूआई और आधुनिक सौंदर्य अनुभवों को तैयार करने में विशिष्ट।",
+            member2Bio2: "जटिल तकनीक को सहज और सुलभ बनाने के लिए समर्पित।",
+            member3Name: "विधि गर्ग",
+            member3Role: "सिस्टम इंजीनियर",
+            member3Bio1: "बैकएंड सिस्टम और न्यूरल प्रोसेसिंग आर्किटेक्चर पर केंद्रित।",
+            member3Bio2: "राष्ट्रीय स्तर के लिए मजबूत और सुरक्षित बुनियादी ढांचे के इंजीनियरिंग के लिए प्रतिबद्ध।",
+            member4Name: "स्नेहा गुप्ता",
+            member4Role: "AI विशेषज्ञ",
+            member4Bio1: "बहु-भाषी स्पीच मॉडल और प्राकृतिक भाषा समझ के विशेषज्ञ।",
+            member4Bio2: "तकनीक को हर बोली और क्षेत्रीय सूक्ष्मता के लिए वास्तव में समावेशी बनाने की दिशा में काम कर रहे हैं।",
+            emailPlaceholder: "email@example.com"
         }
     },
     ta: {
@@ -478,6 +524,29 @@ export const translations = {
             privacy: "தனியுரிமை",
             compliance: "இணக்கம்",
             team: "குழு"
+        },
+        team: {
+            tag: "தொலைநோக்கு சிந்தனையாளர்கள்",
+            title: "எங்கள்",
+            accent: "குழுவைச் சந்திக்கவும்.",
+            desc: "ஒவ்வொரு குடிமகனுக்கும் டிஜிட்டல் இந்தியாவை உண்மையாக உள்ளடக்கியதாக மாற்ற உழைக்கும் பாரத்வாணியின் பின்னணியில் உள்ள அர்ப்பணிப்புள்ள நபர்கள்.",
+            member1Name: "பியூஷ் லிங்வால்",
+            member1Role: "குழுத் தலைவர்",
+            member1Bio1: "ஃபுல்-ஸ்டேக் ஆர்கிடெக்சர் மற்றும் தொழில்நுட்ப கண்டுபிடிப்பு திட்டங்களை முன்னெடுப்பதில் அனுபவம் வாய்ந்தவர்.",
+            member1Bio2: "கிராமப்புற இந்தியாவிற்கான டிஜிட்டல் தீர்வுகளை உருவாக்குவதில் ஆர்வம் கொண்டவர்.",
+            member2Name: "ஸ்மிருதி பி",
+            member2Role: "முன்னணி டெவலப்பர்",
+            member2Bio1: "அதிநவீன மற்றும் நவீன அழகியல் அனுபவங்களை உருவாக்குவதில் நிபுணத்துவம் பெற்றவர்.",
+            member2Bio2: "சிக்கலான தொழில்நுட்பத்தை அனைவருக்கும் எளிமையாக்க அர்ப்பணிப்புடன் செயல்படுபவர்.",
+            member3Name: "விதி கார்க்",
+            member3Role: "கணினி பொறியாளர்",
+            member3Bio1: "பின்னணி அமைப்புகள் மற்றும் நரம்பியல் செயலாக்க கட்டமைப்பில் கவனம் செலுத்துபவர்.",
+            member3Bio2: "தேசிய அளவிற்கான வலுவான உள்கட்டமைப்பை உருவாக்குவதில் உறுதியாக இருப்பவர்.",
+            member4Name: "சினேகா குப்தா",
+            member4Role: "AI நிபுணர்",
+            member4Bio1: "பல மொழி பேச்சு மாதிரிகள் மற்றும் இயற்கை மொழி புரிதலில் நிபுணர்.",
+            member4Bio2: "தகவல் தொழில்நுட்பத்தை ஒவ்வொரு பேச்சுவழக்கிற்கும் உள்ளடக்கியதாக மாற்ற பாடுபடுபவர்.",
+            emailPlaceholder: "email@example.com"
         }
     },
     mr: {
@@ -637,6 +706,29 @@ export const translations = {
             privacy: "गोपनीयता",
             compliance: "अनुपालन",
             team: "संघ"
+        },
+        team: {
+            tag: "स्वप्नद्रष्टे",
+            title: "आमच्या",
+            accent: "संघाला भेटा.",
+            desc: "भारतवाणीमागील समर्पित व्यक्ती, प्रत्येक नागरिकासाठी डिजिटल इंडिया खऱ्या अर्थाने समावेशक बनवण्यासाठी काम करत आहेत.",
+            member1Name: "पियुष लिंगवाल",
+            member1Role: "संघ नेता",
+            member1Bio1: "फुल-स्टॅक आर्किटेक्चर आणि तांत्रिक नाविन्यपूर्ण प्रकल्पांच्या नेतृत्वातील अनुभव.",
+            member1Bio2: "ग्रामीण भारतासाठी डिजिटल सोल्यूशन्स तयार करण्याबद्दल उत्कट.",
+            member2Name: "स्मृती पी",
+            member2Role: "फ्रंटएंड डेव्हलपर",
+            member2Bio1: "उच्च-कार्यक्षमता, प्रतिसाद देणारी UI आणि आधुनिक सौंदर्यानुभव तयार करण्यात विशेष.",
+            member2Bio2: "जटिल तंत्रज्ञान प्रत्येकासाठी अंतर्ज्ञानी आणि सुलभ बनवण्यासाठी समर्पित.",
+            member3Name: "विधी गर्ग",
+            member3Role: "सिस्टम इंजिनिअर",
+            member3Bio1: "बॅकएंड सिस्टम आणि न्यूरल प्रोसेसिंग आर्किटेक्चरवर लक्ष केंद्रित.",
+            member3Bio2: "राष्ट्रीय स्तरासाठी मजबूत आणि सुरक्षित पायाभूत सुविधांच्या अभियांत्रिकीसाठी वचनबद्ध.",
+            member4Name: "स्नेहा गुप्ता",
+            member4Role: "AI तज्ञ",
+            member4Bio1: "बहु-भाषिक स्पीच मॉडेल्स आणि नैसर्गिक भाषा समजून घेण्यातील तज्ञ.",
+            member4Bio2: "तंत्रज्ञान प्रत्येक बोली आणि प्रादेशिक बारकाव्यांसाठी खरोखर समावेशक बनवण्यासाठी कार्यरत.",
+            emailPlaceholder: "email@example.com"
         }
     },
     te: {
@@ -796,6 +888,29 @@ export const translations = {
             privacy: "గోపనీయత",
             compliance: "అనువర్తనం",
             team: "బృందం"
+        },
+        team: {
+            tag: "దార్శనికులు",
+            title: "మా బృందాన్ని",
+            accent: "కలవండి.",
+            desc: "భారతవాణి వెనుక ఉన్న అంకితభావం కలిగిన వ్యక్తులు, ప్రతి పౌరుడికి డిజిటల్ ఇండియాను నిజంగా కలుపుకొనిపోయేలా చేయడానికి కృషి చేస్తున్నారు.",
+            member1Name: "పియూష్ లింగ్వాల్",
+            member1Role: "టీమ్ లీడర్",
+            member1Bio1: "ఫుల్-స్టాక్ ఆర్కిటెక్చర్ మరియు సాంకేతిక వినూత్న ప్రాజెక్టుల నిర్వహణలో అనుభవజ్ఞుడు.",
+            member1Bio2: "గ్రామీణ భారతదేశం కోసం డిజిటల్ పరిష్కారాలను రూపొందించడంలో మక్కువ కలవాడు.",
+            member2Name: "స్మృతి పి",
+            member2Role: "ఫ్రంటెండ్ డెవలపర్",
+            member2Bio1: "అధిక-పనితీరు, ప్రతిస్పందించే UI మరియు ఆధునిక సౌందర్య అనుభవాలను రూపొందించడంలో నైపుణ్యం కలది.",
+            member2Bio2: "క్లిష్టమైన సాంకేతికతను ప్రతి ఒక్కరికీ సులభంగా అర్థమయ్యేలా చేయడానికి అంకితం.",
+            member3Name: "విధి గార్గ్",
+            member3Role: "సిస్టమ్స్ ఇంజనీర్",
+            member3Bio1: "బ్యాకెండ్ సిస్టమ్స్ మరియు న్యూరల్ ప్రాసెసింగ్ ఆర్కిటెక్చర్‌పై దృష్టి.",
+            member3Bio2: "జాతీయ స్థాయి కోసం బలమైన మరియు సురక్షితమైన మౌలిక సదుపాయాల రూపకల్పనలో అంకితభావం.",
+            member4Name: "స్నేహ గుప్తా",
+            member4Role: "AI నిపుణురాలు",
+            member4Bio1: "బహుళ-భాషా ప్రసంగ నమూనాలు మరియు సహజ భాషా అవగాహనలో నిపుణురాలు.",
+            member4Bio2: "సాంకేతికతను ప్రతి మాండలికానికి నిజంగా కలుపుకొనిపోయేలా చేసే దిశగా కృషి.",
+            emailPlaceholder: "email@example.com"
         }
     },
     bn: {
@@ -955,6 +1070,29 @@ export const translations = {
             privacy: "গোপনীয়তা",
             compliance: "সম্মতি",
             team: "টিম"
+        },
+        team: {
+            tag: "স্বপ্নদ্রষ্টারা",
+            title: "আমাদের",
+            accent: "টিমের সাথে পরিচিত হন।",
+            desc: "ভারতবাণীর পিছনে নিবেদিত ব্যক্তিরা, প্রতিটি নাগরিকের জন্য ডিজিটাল ইন্ডিয়াকে সত্যিকার অর্থে অন্তর্ভুক্ত করার জন্য কাজ করছেন।",
+            member1Name: "পিযুষ লিংওয়াল",
+            member1Role: "টিম লিডার",
+            member1Bio1: "ফুল-স্ট্যাক স্থাপত্য এবং প্রযুক্তিগত উদ্ভাবনী প্রকল্পের নেতৃত্ব দেওয়ার অভিজ্ঞতা।",
+            member1Bio2: "গ্রামীণ ভারতের জন্য ডিজিটাল সমাধান তৈরির বিষয়ে উত্সাহী।",
+            member2Name: "স্মৃতি পি",
+            member2Role: "ফ্রন্টএন্ড ডেভেলপার",
+            member2Bio1: "উচ্চ-সম্পাদনকারী, প্রতিক্রিয়াশীল UI এবং আধুনিক নান্দনিক অভিজ্ঞতা তৈরিতে বিশেষজ্ঞ।",
+            member2Bio2: "জটিল প্রযুক্তিকে সবার জন্য সহজ এবং অ্যাক্সেসযোগ্য করার জন্য নিবেদিত।",
+            member3Name: "বিধি গর্গ",
+            member3Role: "সিস্টেম ইঞ্জিনিয়ার",
+            member3Bio1: "ব্যাকএন্ড সিস্টেম এবং নিউরাল প্রসেসিং স্থাপত্যের উপর দৃষ্টি নিবদ্ধ করা হয়েছে।",
+            member3Bio2: "জাতীয় স্তরের জন্য শক্তিশালী এবং নিরাপদ পরিকাঠামো তৈরির জন্য প্রতিশ্রুতিবদ্ধ।",
+            member4Name: "স্নেহা গুপ্তा",
+            member4Role: "AI বিশেষজ্ঞ",
+            member4Bio1: "বহু-ভাষী বক্তৃতা মডেল এবং প্রাকৃতিক ভাষা বোঝার বিশেষজ্ঞ।",
+            member4Bio2: "প্রযুক্তিকে প্রতিটি উপভাষা এবং আঞ্চলিক সূক্ষ্মতার জন্য সত্যিকার অর্থে অন্তর্ভুক্ত করার লক্ষ্যে কাজ করছেন।",
+            emailPlaceholder: "email@example.com"
         }
     }
 };

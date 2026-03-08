@@ -11,6 +11,7 @@ const SolutionFlow = lazy(() => import('./components/SolutionFlow'));
 const Capabilities = lazy(() => import('./components/Capabilities'));
 const Architecture = lazy(() => import('./components/Architecture'));
 const Demo = lazy(() => import('./components/Demo'));
+const Team = lazy(() => import('./components/Team'));
 const Impact = lazy(() => import('./components/Impact'));
 const Footer = lazy(() => import('./components/Footer'));
 
@@ -44,6 +45,7 @@ function App() {
                     <div id="capabilities"><Capabilities /></div>
                     <div id="architecture"><Architecture /></div>
                     <div id="demo"><Demo /></div>
+                    <Team />
                     <Impact />
                 </Suspense>
             </main>
